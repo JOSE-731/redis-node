@@ -1,0 +1,1 @@
+Redis: Una base de datos que se maneja en memoria
