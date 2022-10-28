@@ -1,1 +1,5 @@
-Redis: Una base de datos que se maneja en memoria
+Redis: Una base de datos que se maneja en memoria(Guarda los datos en memoria), a diferente de otras base de datos
+que se obtienen de lectura de archivos, en disco etc
+
+npm i redis: Instalamos driver en la aplicacion, para poder conectarnos a la base de datos
+npm i response: Para medir el tiempo de respuesta
