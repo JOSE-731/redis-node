@@ -3,3 +3,4 @@ que se obtienen de lectura de archivos, en disco etc
 
 npm i redis: Instalamos driver en la aplicacion, para poder conectarnos a la base de datos
 npm i response: Para medir el tiempo de respuesta
+npm i axios: Hacer peticiones
