@@ -4,3 +4,7 @@ que se obtienen de lectura de archivos, en disco etc
 npm i redis: Instalamos driver en la aplicacion, para poder conectarnos a la base de datos
 npm i response: Para medir el tiempo de respuesta
 npm i axios: Hacer peticiones
+
+Nota se trabajo con la version : 3.1.2 de redis ya que con la ultima el driver era diferente 
+npm install -g redis-commander: Nos sirve para descargar un cliente web de redis
+redis-commander: Ejecuta el servidor donde veremos la interfaz
