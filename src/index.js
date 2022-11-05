@@ -2,14 +2,9 @@ import  express from'express';
 import axios from'axios';
 const app = express();
 
+import  {client}  from './db/conexion.js';
 import responseTime from 'response-time';
-import redis from 'redis';
 import { promisify } from 'util'; //Libreria por defecto en node para trabajar con promesas
-
-const client = redis.createClient({
-    host: "127.0.0.1",
-    port: 6379
-})
 
 //Optimizamos el callcback a una promesa para utilizar el async y el await
 const GET_ASYN = promisify(client.get).bind(client)
@@ -32,7 +27,6 @@ app.get('/character', async (req, res) => {
         //Redis guarda en string, por lo que debemos pasar el objeto a string
         const reply2 = await SET_ASYN('characters', JSON.stringify(response.data));
         res.json(response.data)
-
 });
 
 
